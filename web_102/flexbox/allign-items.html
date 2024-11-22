@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container {
+      font-size: 2em;
+      display: flex;
+      border: solid red;
+      /*      */
+      flex-wrap: wrap;
+      gap: 10px;
+      height: 600px;
+
+      align-items: baseline;
+      align-items: center;
+      /*            align-items: flex-end;*/
+      /*            align-items: flex-start;*/
+      /*            align-items: stretch;*/
+    }
+
+    #container>div {
+      border: solid 1px;
+    }
+
+    #container>div:nth-child(odd) {
+      width: 100px;
+      background-color: lime;
+    }
+
+    #container>div:nth-child(even) {
+      width: 150px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--  #container>div{$}*6-->
+  <div id="container">
+    <div>1 <br>Lorem ipsum.</div>
+    <div>2 <br>Lorem ipsum. Lorem ipsum.</div>
+    <div>3 <br>Lorem ipsum.</div>
+    <div>4 <br>Lorem ipsum. Lorem ipsum.</div>
+    <div>5 <br>Lorem ipsum.</div>
+    <div>6 <br>Lorem ipsum. Lorem ipsum.</div>
+  </div>
+
+  <img src="img/align_items_img.svg" alt="">
+</body></html>

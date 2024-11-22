@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>flex direction/wrap/gap</title>
+  <style>
+    #container {
+      border: solid;
+      font-size: 3em;
+      /* change regular container to flex container which makes every child a flex item */
+      display: flex;
+
+      /*      by default, direction is row */
+      /*      flex-direction: row;*/
+      /*      flex-direction: column;*/
+
+      /*      flex-wrap: wrap;*/
+
+      flex-flow: row wrap;
+      gap: 10px 20px;
+    }
+
+    #container>div {
+      border: solid 1px;
+      width: 100px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--  #container>div{$}*6-->
+  <div id="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+</body></html>

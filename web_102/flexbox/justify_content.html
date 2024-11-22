@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #container {
+      font-size: 3em;
+      display: flex;
+      border: solid red;
+      /*      */
+      flex-wrap: wrap;
+      /*      by default*/
+      /*      justify-content: flex-start;*/
+      justify-content: flex-end;
+      justify-content: center;
+      /* space-around, space-evenly, space-between */
+      justify-content: space-around;
+      gap: 10px;
+    }
+
+    #container>div {
+      border: solid 1px;
+    }
+
+    #container>div:nth-child(odd) {
+      width: 100px;
+      background-color: lime;
+    }
+
+    #container>div:nth-child(even) {
+      width: 150px;
+      background-color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--  #container>div{$}*6-->
+  <div id="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+
+  <img src="img/justify_content_img.svg" alt="">
+
+</body></html>
